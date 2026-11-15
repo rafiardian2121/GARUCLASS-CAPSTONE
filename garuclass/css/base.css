@@ -1,0 +1,126 @@
+/* base.css: variabel warna, reset, tipografi, grid, card, input */
+:root {
+  --bg: #f8fafc;
+  --card: #fff;
+  --ink: #0f172a;
+  --mut: #64748b;
+  --line: #e2e8f0;
+  --soft: #f1f5f9;
+  --brand: #e11d48;
+  --brandsoft: #ffe4e6;
+  --navy: #0f172a;
+  --onnavy: #fff;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: radial-gradient(circle at 0% 0%, #fff1f2 0, transparent 40%), var(--bg);
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  line-height: 1.5;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  background: var(--card);
+  z-index: 60;
+}
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+h1 {
+  font-size: clamp(30px, 5vw, 56px);
+  line-height: 1.05;
+  margin: 16px 0;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+h1 span {
+  color: var(--brand);
+  display: block;
+}
+h2 {
+  font-size: clamp(24px, 3vw, 32px);
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.mut {
+  color: var(--mut);
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 8px 24px #0f172a0d;
+}
+.grid {
+  display: grid;
+  gap: 18px;
+}
+.g4 {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+.g3 {
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+}
+.g2 {
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.in,
+select {
+  width: 100%;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 11px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  outline: 0;
+}
+.in:focus,
+select:focus {
+  border-color: var(--brand);
+}
+pre {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11.5px;
+  white-space: pre-wrap;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  margin: 10px 0;
+}

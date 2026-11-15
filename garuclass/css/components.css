@@ -1,0 +1,182 @@
+/* components.css: tombol, pill, tabel, segmen, bar, ranking (dipakai banyak halaman) */
+.btn {
+  background: var(--brand);
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  box-shadow: 0 6px 16px #e11d4835;
+}
+.btn.dark {
+  background: var(--navy);
+  color: #fff;
+  box-shadow: none;
+}
+.btn.ghost {
+  background: var(--brandsoft);
+  color: var(--brand);
+  box-shadow: none;
+}
+.pill {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 99px;
+  padding: 3px 10px;
+  background: var(--soft);
+  color: var(--mut);
+}
+.s1 {
+  background: #ffe4e6;
+  color: #e11d48;
+}
+.s2 {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+.s3 {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+.s4 {
+  background: #d1fae5;
+  color: #047857;
+}
+.s5 {
+  background: #fef3c7;
+  color: #b45309;
+}
+.s6 {
+  background: #e2e8f0;
+  color: #475569;
+}
+.stat b {
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 6px 0 2px;
+}
+.stat span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--mut);
+}
+.up {
+  color: #059669;
+  font-size: 12px;
+  font-weight: 600;
+}
+.seg {
+  display: flex;
+  gap: 3px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 4px;
+}
+.seg button {
+  padding: 7px 14px;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--mut);
+}
+.seg button.on {
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 1px 3px #0001;
+}
+.seg.v button.on {
+  color: var(--brand);
+}
+.issn {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  color: var(--mut);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sm {
+  padding: 7px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.bm {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  color: var(--mut);
+  font-size: 16px;
+}
+.bm.on {
+  background: var(--brandsoft);
+  color: var(--brand);
+}
+.tbl {
+  overflow-x: auto;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 820px;
+  font-size: 13px;
+}
+th {
+  background: var(--navy);
+  color: #fff;
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+td {
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+  vertical-align: middle;
+}
+.bar2 {
+  height: 8px;
+  background: var(--soft);
+  border-radius: 9px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+.bar2 i {
+  display: block;
+  height: 100%;
+  border-radius: 9px;
+}
+.ov {
+  overflow-x: auto;
+}
+.rk {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--soft);
+  border-radius: 16px;
+  margin-top: 10px;
+}
+.rk .av {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 11px;
+  color: #fff;
+}

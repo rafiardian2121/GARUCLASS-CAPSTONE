@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>GaruClass – Klasifikasi Jurnal Berbasis Data GARUDA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="pages/beranda/beranda.css" />
+    <link rel="stylesheet" href="pages/jurnal/jurnal.css" />
+    <link rel="stylesheet" href="pages/statistik/statistik.css" />
+    <link rel="stylesheet" href="pages/masuk/masuk.css" />
+    <link rel="stylesheet" href="components/detail-modal/detail-modal.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <a class="logo" href="#beranda"
+          ><i>📖</i>
+          <div>
+            <b>Garu<span>Class</span></b
+            ><em>V3.0 PRO</em><small>Klasifikasi Jurnal Berbasis Data GARUDA</small>
+          </div></a
+        >
+        <nav id="nav">
+          <a href="#beranda" data-r="beranda">Beranda</a
+          ><a href="#jurnal" data-r="jurnal">Cari Jurnal</a
+          ><a href="#statistik" data-r="statistik">Statistik &amp; Analytics</a
+          ><a href="#prediksi" data-r="prediksi" class="adm" hidden>Klasifikasi</a
+          ><a href="#admin" data-r="admin" class="adm" hidden>Dashboard Admin</a>
+        </nav>
+        <a class="btn" href="#masuk" id="auth">👤 Masuk / Daftar</a>
+      </div>
+    </header>
+    <main class="wrap" id="app"></main>
+    <footer>
+      <div class="wrap grid g3">
+        <div>
+          <b style="color: #fff; font-size: 17px">GaruClass</b>
+          <p>
+            Platform Klasifikasi &amp; Analisis Jurnal Ilmiah Indonesia berbasis data GARUDA
+            Kemdikbudristek.
+          </p>
+        </div>
+        <div>
+          <h4>Navigasi Utama</h4>
+          <a href="#beranda">Beranda</a><a href="#jurnal">Cari Jurnal</a
+          ><a href="#statistik">Statistik &amp; Data</a>
+        </div>
+        <div>
+          <h4>Integrasi Portal</h4>
+          <a href="https://garuda.kemdikbud.go.id" target="_blank" rel="noopener"
+            >GARUDA Kemdikbud ↗</a
+          ><a href="https://sinta.kemdikbud.go.id" target="_blank" rel="noopener">SINTA Database</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/data/journals.js"></script>
+    <script src="js/core/utils.js"></script>
+    <script src="js/core/state.js"></script>
+    <script src="js/core/auth.js"></script>
+    <script src="js/core/api.js"></script>
+    <script src="js/core/similarity.js"></script>
+    <script src="components/detail-modal/detail-modal.js"></script>
+    <script src="pages/beranda/beranda.js"></script>
+    <script src="pages/jurnal/jurnal.js"></script>
+    <script src="pages/statistik/statistik.js"></script>
+    <script src="pages/masuk/masuk.js"></script>
+    <script src="pages/klasifikasi/klasifikasi.js"></script>
+    <script src="pages/admin/admin.js"></script>
+    <script src="js/core/router.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

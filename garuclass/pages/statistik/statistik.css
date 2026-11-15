@@ -1,0 +1,27 @@
+/* Halaman Statistik */
+.cols {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  height: 190px;
+  margin: 18px 0;
+}
+.cols div {
+  flex: 1;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.cols i {
+  display: block;
+  border-radius: 10px 10px 0 0;
+  background: var(--navy);
+  margin: 4px 0;
+}
+.cols .last i {
+  background: var(--brand);
+}
